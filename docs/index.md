@@ -14,9 +14,7 @@ Diseñar e implementar un sistema IoT capaz de monitorear la calidad del aire y 
 
 - [Componentes utilizados](componentes.md)  
 - [Conexiones eléctricas](conexiones.md)  
-- [Calibración de sensores](calibracion.md)  
-- [Código fuente](codigo.md)  
-- [Resultados](resultados.md)  
+- [Código fuente](codigo.md)   
 - [Autores](autores.md)  
 - [Licencia](licencia.md)
 
@@ -28,13 +26,13 @@ A continuación se muestra el panel en tiempo real de tu dispositivo conectado a
 
 En el seleccionador busca: WEMOS_001_SENA_PASTO
 
-<iframe 
-    src="http://www.calidadmedioambiental.org/dashboard" 
-    width="100%" 
-    height="600" 
-    style="border: 2px solid #ccc; border-radius: 10px;"
-    loading="lazy">
-</iframe>
+<div style="text-align:center; margin: 2em 0;">
+  <a href="https://www.calidadmedioambiental.org/dashboard" target="_blank" 
+     style="background-color:#007acc; color:white; padding:10px 20px; border-radius:6px; text-decoration:none;">
+     🌍 Ver panel de datos Respira
+  </a>
+</div>
+
 
 > ⚠ **Nota:** La visualización directa de datos históricos desde la API pública de Respira fue deshabilitada temporalmente.  
 > Los valores se pueden consultar desde la interfaz web de la plataforma o mediante descarga manual de los registros.
