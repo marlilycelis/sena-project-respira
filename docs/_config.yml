@@ -1,31 +1,91 @@
-# ========================================
-#  CONFIGURACIÓN DEL SITIO - PROYECTO RESPIRA IoT
-# ========================================
-
-title: "🌿 Proyecto Respira — Monitoreo Ambiental IoT"
-description: "Sistema de medición y análisis ambiental con ESP32, MQ-135 y sensor de humedad | Implementación SENA Pasto"
+# Configuración del sitio
+title: Proyecto Respira
+description: Sistema IoT de monitoreo ambiental - SENA
+baseurl: "/sena-proyecto-respira" # Cambia esto por el nombre de tu repositorio
+url: "https://marlilycelis.github.io" # Cambia esto por tu usuario de GitHub
 
 # Tema
+theme: just-the-docs
 remote_theme: just-the-docs/just-the-docs
 
-# Mostrar botón de descarga del repositorio
-show_downloads: true
+# Color scheme
+color_scheme: nil
 
-# Idioma y metadatos
-lang: es-CO
-author: "Aprendices SENA — Lope"
+# Logo (opcional - puedes añadir un logo en /assets/)
+# logo: "/assets/images/logo.png"
 
-# Configuración de GitHub
-github:
-  is_project_page: true
-  repository_url: "https://github.com/marlilycelis/sena-proyecto-respira"
-
-# Navegación lateral
-nav_enabled: true
+# Configuración de búsqueda
 search_enabled: true
-nav_order:
-  - Componentes
-  - Conexiones
-  - Codigo
-  - Autores
-  - Licencia
+search:
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_just_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+
+# Navegación auxiliar (links en el header)
+aux_links:
+  "Repositorio GitHub":
+    - "https://github.com/marlilycelis/sena-proyecto-respira"
+  "Plataforma Respira":
+    - "https://www.calidadmedioambiental.org/dashboard"
+
+# Botón para editar en GitHub
+gh_edit_link: true
+gh_edit_link_text: "Editar esta página en GitHub"
+gh_edit_repository: "https://github.com/marlilycelis/sena-proyecto-respira"
+gh_edit_branch: "main"
+gh_edit_view_mode: "tree"
+
+# Footer
+footer_content: "Copyright &copy; 2025 Proyecto Respira SENA. Distribuido bajo Licencia MIT."
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Volver arriba"
+
+# Footer con última actualización
+last_edit_timestamp: true
+last_edit_time_format: "%d/%m/%Y %H:%M"
+
+# Mermaid para diagramas
+mermaid:
+  version: "10.6.1"
+
+# Habilitar Mermaid
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+  - jekyll-include-cache
+
+# Exclude de la construcción
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - src/
+
+# Configuración de archivos estáticos
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
