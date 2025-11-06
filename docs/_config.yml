@@ -1,7 +1,7 @@
 # Configuración básica del sitio
 title: Proyecto Respira
 description: Sistema IoT de monitoreo ambiental - SENA
-baseurl: "/sena-proyecto-respira"
+baseurl: "/sena-project-respira"
 url: "https://marlilycelis.github.io"
 
 # TEMA - Usar versión específica estable
@@ -45,7 +45,7 @@ nav_sort: case_insensitive
 # Enlaces auxiliares en header
 aux_links:
   "Ver en GitHub":
-    - "//github.com/marlilycelis/sena-proyecto-respira"
+    - "//github.com/marlilycelis/sena-project-respira"
 
 # Botón de GitHub
 aux_links_new_tab: true
@@ -60,7 +60,7 @@ back_to_top_text: "Volver arriba"
 # Editar en GitHub
 gh_edit_link: true
 gh_edit_link_text: "Editar en GitHub"
-gh_edit_repository: "https://github.com/marlilycelis/sena-proyecto-respira"
+gh_edit_repository: "https://github.com/marlilycelis/sena-project-respira"
 gh_edit_branch: "main"
 gh_edit_source: docs
 gh_edit_view_mode: "tree"
