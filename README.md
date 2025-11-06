@@ -14,7 +14,7 @@ Proyecto IoT para el monitoreo ambiental utilizando una placa **ESP32 Wemos Loli
 
 La documentación completa del proyecto se encuentra disponible en GitHub Pages:
 
-👉 [https://tuusuario.github.io/sena-proyecto-respira](https://tuusuario.github.io/sena-proyecto-respira)
+👉 [https://github.com/marlilycelis/sena-project-respiraa](https://github.com/marlilycelis/sena-project-respira)
 
 ---
 
@@ -22,4 +22,4 @@ La documentación completa del proyecto se encuentra disponible en GitHub Pages:
 
 - `/docs` → Documentación en formato Markdown (para GitHub Pages)  
 - `/src` → Código fuente del proyecto  
-- `/docs/assets/img` → Imágenes y diagramas de conexión  
+- `/docs/assets` → Imágenes y diagramas de conexión  
