@@ -1,31 +1,46 @@
-# Configuración básica
-title: Proyecto Respira
-description: Sistema IoT de monitoreo ambiental - SENA
-baseurl: "/sena-project-respira"
+# ==============================
+# Configuración del sitio
+# ==============================
+title: "Proyecto Respira"
+description: "Sistema IoT de monitoreo ambiental - SENA"
+baseurl: "/sena-project-respira"  # nombre exacto del repo
 url: "https://marlilycelis.github.io"
 
-# Tema
-remote_theme: just-the-docs/just-the-docs
+# ==============================
+# Tema (simple y compatible con GitHub Pages)
+# ==============================
+theme: just-the-docs
 
-# Búsqueda
+# ==============================
+# Navegación y búsqueda
+# ==============================
 search_enabled: true
 
-# Navegación
 aux_links:
-  "GitHub":
+  "🌐 GitHub":
     - "https://github.com/marlilycelis/sena-project-respira"
 
-# Footer
-footer_content: "Copyright &copy; 2025 Proyecto Respira SENA"
+# ==============================
+# Pie de página
+# ==============================
+footer_content: "© 2025 Proyecto Respira — SENA"
 
-# Markdown
-markdown: kramdown
-
-# Plugins mínimos
+# ==============================
+# Plugins recomendados por GitHub Pages
+# ==============================
 plugins:
   - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
 
-# Excluir
+# ==============================
+# Markdown
+# ==============================
+markdown: kramdown
+
+# ==============================
+# Archivos a excluir
+# ==============================
 exclude:
   - Gemfile
   - Gemfile.lock
