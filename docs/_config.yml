@@ -3,11 +3,11 @@
 # ==============================
 title: "Proyecto Respira"
 description: "Sistema IoT de monitoreo ambiental - SENA"
-baseurl: "/sena-project-respira"  # nombre exacto del repo
+baseurl: "/sena-project-respira"   # nombre exacto del repositorio
 url: "https://marlilycelis.github.io"
 
 # ==============================
-# Tema (simple y compatible con GitHub Pages)
+# Tema (compatible con GitHub Pages)
 # ==============================
 theme: just-the-docs
 
@@ -26,7 +26,7 @@ aux_links:
 footer_content: "© 2025 Proyecto Respira — SENA"
 
 # ==============================
-# Plugins recomendados por GitHub Pages
+# Plugins recomendados
 # ==============================
 plugins:
   - jekyll-seo-tag
