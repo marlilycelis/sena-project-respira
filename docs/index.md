@@ -29,7 +29,7 @@ A continuación se muestra el panel en tiempo real de tu dispositivo conectado a
 En el seleccionador busca: WEMOS_001_SENA_PASTO
 
 <iframe 
-    src="https://www.calidadmedioambiental.org/dashboard" 
+    src="http://www.calidadmedioambiental.org/dashboard" 
     width="100%" 
     height="600" 
     style="border: 2px solid #ccc; border-radius: 10px;"

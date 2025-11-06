@@ -1,19 +1,22 @@
-# ==============================
-#  CONFIGURACIÓN DE GITHUB PAGES
-#  Proyecto: SENA Respira IoT
-# ==============================
+# ========================================
+#  CONFIGURACIÓN DEL SITIO - PROYECTO RESPIRA IoT
+# ========================================
 
-theme: jekyll-theme-cayman
+title: "🌿 Proyecto Respira — Monitoreo Ambiental IoT"
+description: "Sistema de medición y análisis ambiental con ESP32, MQ-135 y sensor de humedad | Implementación SENA Pasto"
+theme: jekyll-theme-architect
 
-title: "🌿 Proyecto Respira IoT"
-description: "Monitoreo ambiental con sensores MQ-135 y higrómetro conectados a ESP32 | Implementación SENA Pasto"
+# Mostrar botón de descarga del repositorio
+show_downloads: true
 
-# Opciones adicionales
-show_downloads: false
-google_analytics: false
+# Desactiva Google Analytics (puedes activarlo agregando tu código de seguimiento)
+google_analytics:
 
-# Personalización del encabezado
-author: "Aprendices SENA - Lope"
+# Información del autor y enlace al repositorio
+author: "Aprendices SENA — Lope"
 github:
   is_project_page: true
-  repository_url: "https://github.com/marlilycelis/sena-proyecto-respira"
+  repository_url: "https://github.com/marlilycelis/sena-project-respira"
+
+# Idioma
+lang: es-CO
