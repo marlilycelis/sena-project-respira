@@ -4,58 +4,28 @@
 
 title: "🌿 Proyecto Respira — Monitoreo Ambiental IoT"
 description: "Sistema de medición y análisis ambiental con ESP32, MQ-135 y sensor de humedad | Implementación SENA Pasto"
-theme: pmarsceill/just-the-docs
 
-# Idioma del sitio
-lang: es-CO
+# Tema
+remote_theme: just-the-docs/just-the-docs
 
 # Mostrar botón de descarga del repositorio
 show_downloads: true
 
-# =============================
-#  CONFIGURACIÓN DE NAVEGACIÓN
-# =============================
-# Define el orden de los archivos de documentación
-# (usa el campo 'nav_order' en cada archivo .md para personalizar el orden)
-nav_sort: case_insensitive
-search_enabled: true
-search_tokenizer_separator: /[\s/]+/
+# Idioma y metadatos
+lang: es-CO
+author: "Aprendices SENA — Lope"
 
-# =============================
-#  INFORMACIÓN DEL REPOSITORIO
-# =============================
-author: "Aprendices SENA — Centro Lope"
+# Configuración de GitHub
 github:
   is_project_page: true
   repository_url: "https://github.com/marlilycelis/sena-proyecto-respira"
 
-# =============================
-#  CONFIGURACIÓN DE ESTILO
-# =============================
-color_scheme: light  # Puedes cambiar a 'dark' si lo prefieres
-logo: "/assets/Lolin32.jpg"
-
-# =============================
-#  ENLACES EXTRA DEL SITIO
-# =============================
-aux_links:
-  "Ver en GitHub 💻":
-    - "https://github.com/marlilycelis/sena-proyecto-respira"
-  "SENA Pasto 🌎":
-    - "https://www.sena.edu.co/"
-
-# =============================
-#  OPCIONES AVANZADAS
-# =============================
-# Permitir uso de diagramas Mermaid y HTML en Markdown
-markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: false
-  syntax_highlighter_opts:
-    block:
-      line_numbers: false
-
-# =============================
-#  GOOGLE ANALYTICS (opcional)
-# =================
+# Navegación lateral
+nav_enabled: true
+search_enabled: true
+nav_order:
+  - Componentes
+  - Conexiones
+  - Codigo
+  - Autores
+  - Licencia
