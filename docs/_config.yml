@@ -4,19 +4,58 @@
 
 title: "🌿 Proyecto Respira — Monitoreo Ambiental IoT"
 description: "Sistema de medición y análisis ambiental con ESP32, MQ-135 y sensor de humedad | Implementación SENA Pasto"
-theme: jekyll-theme-architect
+theme: pmarsceill/just-the-docs
+
+# Idioma del sitio
+lang: es-CO
 
 # Mostrar botón de descarga del repositorio
 show_downloads: true
 
-# Desactiva Google Analytics (puedes activarlo agregando tu código de seguimiento)
-google_analytics:
+# =============================
+#  CONFIGURACIÓN DE NAVEGACIÓN
+# =============================
+# Define el orden de los archivos de documentación
+# (usa el campo 'nav_order' en cada archivo .md para personalizar el orden)
+nav_sort: case_insensitive
+search_enabled: true
+search_tokenizer_separator: /[\s/]+/
 
-# Información del autor y enlace al repositorio
-author: "Aprendices SENA — Lope"
+# =============================
+#  INFORMACIÓN DEL REPOSITORIO
+# =============================
+author: "Aprendices SENA — Centro Lope"
 github:
   is_project_page: true
-  repository_url: "https://github.com/marlilycelis/sena-project-respira"
+  repository_url: "https://github.com/marlilycelis/sena-proyecto-respira"
 
-# Idioma
-lang: es-CO
+# =============================
+#  CONFIGURACIÓN DE ESTILO
+# =============================
+color_scheme: light  # Puedes cambiar a 'dark' si lo prefieres
+logo: "/assets/Lolin32.jpg"
+
+# =============================
+#  ENLACES EXTRA DEL SITIO
+# =============================
+aux_links:
+  "Ver en GitHub 💻":
+    - "https://github.com/marlilycelis/sena-proyecto-respira"
+  "SENA Pasto 🌎":
+    - "https://www.sena.edu.co/"
+
+# =============================
+#  OPCIONES AVANZADAS
+# =============================
+# Permitir uso de diagramas Mermaid y HTML en Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# =============================
+#  GOOGLE ANALYTICS (opcional)
+# =================
