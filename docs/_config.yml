@@ -1,17 +1,17 @@
 # Configuración del sitio
 title: Proyecto Respira
 description: Sistema IoT de monitoreo ambiental - SENA
-baseurl: "/sena-proyecto-respira" # Cambia esto por el nombre de tu repositorio
-url: "https://marlilycelis.github.io" # Cambia esto por tu usuario de GitHub
+baseurl: "/sena-proyecto-respira"
+url: "https://marlilycelis.github.io"
 
-# Tema - IMPORTANTE: Solo usar remote_theme para GitHub Pages
+# Tema - Solo remote_theme para GitHub Pages
 remote_theme: just-the-docs/just-the-docs@v0.10.0
 
-# Color scheme
+# Color scheme (puedes cambiarlo a: light, dark, o crear uno personalizado)
 color_scheme: nil
 
-# Logo (opcional - puedes añadir un logo en /assets/)
-# logo: "/assets/images/logo.png"
+# Logo (opcional)
+# logo: "/assets/logo.png"
 
 # Configuración de búsqueda
 search_enabled: true
@@ -26,64 +26,59 @@ search:
 
 # Navegación auxiliar (links en el header)
 aux_links:
-  "Repositorio GitHub":
+  "GitHub":
     - "https://github.com/marlilycelis/sena-proyecto-respira"
   "Plataforma Respira":
     - "https://www.calidadmedioambiental.org/dashboard"
 
+aux_links_new_tab: true
+
 # Botón para editar en GitHub
 gh_edit_link: true
-gh_edit_link_text: "Editar esta página en GitHub"
+gh_edit_link_text: "Editar en GitHub"
 gh_edit_repository: "https://github.com/marlilycelis/sena-proyecto-respira"
 gh_edit_branch: "main"
 gh_edit_view_mode: "tree"
+gh_edit_source: docs
 
 # Footer
-footer_content: "Copyright &copy; 2025 Proyecto Respira SENA. Distribuido bajo Licencia MIT."
+footer_content: "Copyright &copy; 2025 Proyecto Respira SENA - Licencia MIT"
 
 # Back to top link
 back_to_top: true
-back_to_top_text: "Volver arriba"
+back_to_top_text: "⬆ Volver arriba"
 
 # Footer con última actualización
 last_edit_timestamp: true
-last_edit_time_format: "%d/%m/%Y %H:%M"
+last_edit_time_format: "%d %b %Y %H:%M"
 
-# Habilitar Mermaid para diagramas
-mermaid:
-  version: "10.6.1"
+# Habilitar heading anchors
+heading_anchors: true
 
 # Configuración de Markdown
 markdown: kramdown
 kramdown:
   input: GFM
+  hard_wrap: false
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     block:
       line_numbers: false
 
-# Plugins requeridos para GitHub Pages
+# Plugins
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-sitemap
+  - jekyll-github-metadata
+  - jekyll-include-cache
 
 # Exclude de la construcción
 exclude:
-  - README.md
+  - node_modules/
+  - vendor/
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - src/
   - "*.gem"
   - "*.gemspec"
-  - LICENSE
-  - package.json
-  - package-lock.json
   - script/
   - LICENSE.txt
   - lib/
@@ -91,24 +86,34 @@ exclude:
   - Rakefile
   - Dockerfile
 
-# Incluir archivos que empiezan con punto
-include:
-  - _pages
+# Configuración para Mermaid (diagramas)
+mermaid:
+  version: "10.6.1"
 
-# Configuración de archivos estáticos
+# Compress HTML
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
+
+# Collections
+collections_dir: .
+
+# Defaults
 defaults:
-  - scope:
-      path: "assets/images"
-    values:
-      image: true
   - scope:
       path: ""
       type: "pages"
     values:
       layout: "default"
-
-# Configuración de colecciones (opcional)
-collections_dir: docs
-
-# Timezone
-timezone: America/Bogota
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+  - scope:
+      path: "assets"
+    values:
+      image: true
