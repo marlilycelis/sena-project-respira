@@ -1,0 +1,19 @@
+# ==============================
+#  CONFIGURACIÓN DE GITHUB PAGES
+#  Proyecto: SENA Respira IoT
+# ==============================
+
+theme: jekyll-theme-cayman
+
+title: "🌿 Proyecto Respira IoT"
+description: "Monitoreo ambiental con sensores MQ-135 y higrómetro conectados a ESP32 | Implementación SENA Pasto"
+
+# Opciones adicionales
+show_downloads: false
+google_analytics: false
+
+# Personalización del encabezado
+author: "Aprendices SENA - Lope"
+github:
+  is_project_page: true
+  repository_url: "https://github.com/marlilycelis/sena-proyecto-respira"
