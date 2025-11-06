@@ -11,7 +11,7 @@ El sistema se desarrolló en **Arduino IDE** utilizando dos programas principale
 
 Este código permite obtener los valores mínimos y máximos de cada sensor (aire limpio / aire contaminado, seco / húmedo).
 
-🔗 [Ver código completo de calibración (`calibracion.ino`)](../src/calibracion.ino)
+🔗 [Ver código completo de calibración (`calibracion.ino`)](https://github.com/marlilycelis/sena-proyecto-respira/blob/main/src/calibracion.ino)
 
 ---
 
@@ -19,11 +19,13 @@ Este código permite obtener los valores mínimos y máximos de cada sensor (air
 
 Este programa configura la red WiFi, lee los sensores y envía los datos a la plataforma Respira mediante HTTP.
 
-🔗 [Ver código principal (`respira_codigo.ino`)](../src/respira_codigo.ino)
+🔗 [Ver código principal (`respira_codigo.ino`)](https://github.com/marlilycelis/sena-proyecto-respira/blob/main/src/respira_codigo.ino)
 
 ---
 
-## 🔄 Flujo de funcionamiento
+## 🔄 Flujo general del sistema
+
+A continuación se muestra el flujo completo del proceso de captura, calibración y envío de datos del proyecto **Respira IoT**.
 
 ```mermaid
 graph TD
@@ -32,3 +34,4 @@ graph TD
     C --> D[Calibración o procesamiento de datos]
     D --> E[Envío a plataforma Respira]
     E --> F[Visualización de datos en la web]
+

@@ -1,59 +1,66 @@
 # 🔌 Conexiones del sistema
 
 ## Diagrama general
-```mermaid
+## 🔌 Diagrama de conexiones (Mermaid)
+
+<div class="mermaid">
 graph TD
     %% ==== SENSOR MQ-135 ====
-    subgraph Sensor_MQ135["🔹 Sensor MQ-135"]
-        VCC5V["+5V MQ135"]
-        AO["AO MQ135 (Salida analógica)"]
-        GND_MQ["GND MQ135"]
+    subgraph Sensor_MQ135
+        VCC5V[+5V del sensor MQ135]
+        AO[Salida AO MQ135]
+        GND_MQ[GND MQ135]
     end
 
     %% ==== SENSOR HIGRÓMETRO ====
-    subgraph Sensor_Higrometro["🔹 Sensor Higrómetro"]
-        VCC_HIGRO["+5V Higrómetro"]
-        AO_HIGRO["AO Higrómetro (Salida analógica)"]
-        GND_HIGRO["GND Higrómetro"]
+    subgraph Sensor_Higrometro
+        VCC_HIGRO[+5V del higrómetro]
+        AO_HIGRO[Salida AO higrómetro]
+        GND_HIGRO[GND higrómetro]
     end
 
-    %% ==== DIVISORES MQ135 ====
-    subgraph Divisor_MQ135["⚙️ Divisor de tensión MQ135"]
-        R1_MQ["R1 = 5.1kΩ"]
-        R2_MQ["R2 = 10kΩ"]
+    %% ==== DIVISORES ====
+    subgraph Divisor_MQ135
+        R1_MQ[Resistencia R1 5.1kΩ]
+        R2_MQ[Resistencia R2 10kΩ]
     end
 
-    %% ==== DIVISORES HIGRÓMETRO ====
-    subgraph Divisor_Higrometro["⚙️ Divisor de tensión Higrómetro"]
-        R1_H["R1 = 5.1kΩ"]
-        R2_H["R2 = 10kΩ"]
+    subgraph Divisor_Higrometro
+        R1_H[Resistencia R1 5.1kΩ]
+        R2_H[Resistencia R2 10kΩ]
     end
 
     %% ==== ESP32 ====
-    subgraph ESP32_WEMOS_LOLIN32["🧠 ESP32 Wemos Lolin32"]
-        VCC_ESP["5V salida ESP32"]
-        ADC_MQ["GPIO34 (ADC1_6) - MQ135"]
-        ADC_H["GPIO35 (ADC1_7) - Higrómetro"]
-        GND_ESP["GND común ESP32"]
+    subgraph ESP32_WEMOS_LOLIN32
+        VCC_ESP[5V de la ESP32]
+        ADC_MQ[Pin ADC GPIO34 MQ135]
+        ADC_H[Pin ADC GPIO35 Higrometro]
+        GND_ESP[GND ESP32]
     end
 
-    %% ==== CONEXIONES MQ135 ====
-    VCC_ESP -->|Alimenta| VCC5V
+    %% ==== CONEXIONES MQ-135 ====
+    VCC_ESP -->|Alimenta sensor MQ135| VCC5V
     AO --> R1_MQ
-    R1_MQ -->|Punto medio a| ADC_MQ
+    R1_MQ -->|Punto medio MQ135| ADC_MQ
     R1_MQ --> R2_MQ
     R2_MQ --> GND_MQ
 
     %% ==== CONEXIONES HIGRÓMETRO ====
-    VCC_ESP -->|Alimenta| VCC_HIGRO
+    VCC_ESP -->|Alimenta sensor Higrometro| VCC_HIGRO
     AO_HIGRO --> R1_H
-    R1_H -->|Punto medio a| ADC_H
+    R1_H -->|Punto medio Higrometro| ADC_H
     R1_H --> R2_H
     R2_H --> GND_HIGRO
 
-    %% ==== MASAS COMUNES ====
+    %% ==== GND COMÚN ====
     GND_MQ --- GND_HIGRO --- GND_ESP
-```
+</div>
+
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true, theme: "default" });
+</script>
+
 ## Montaje
 ![Thinkercad](assets/Tinkercad.png)
 
