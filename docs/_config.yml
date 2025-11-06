@@ -1,119 +1,99 @@
-# Configuración del sitio
+# Configuración básica del sitio
 title: Proyecto Respira
 description: Sistema IoT de monitoreo ambiental - SENA
 baseurl: "/sena-proyecto-respira"
 url: "https://marlilycelis.github.io"
 
-# Tema - Solo remote_theme para GitHub Pages
-remote_theme: just-the-docs/just-the-docs@v0.10.0
+# TEMA - Usar versión específica estable
+remote_theme: just-the-docs/just-the-docs@v0.8.2
 
-# Color scheme (puedes cambiarlo a: light, dark, o crear uno personalizado)
-color_scheme: nil
+# Configuración del tema
+color_scheme: light
 
-# Logo (opcional)
-# logo: "/assets/logo.png"
+# Callouts (notas, advertencias, etc)
+callouts_level: quiet
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Importante
+    color: blue
+  new:
+    title: Nuevo
+    color: green
+  note:
+    title: Nota
+    color: purple
+  warning:
+    title: Advertencia
+    color: red
 
-# Configuración de búsqueda
+# Búsqueda
 search_enabled: true
 search:
   heading_level: 2
-  previews: 3
-  preview_words_before: 5
-  preview_words_after: 10
+  previews: 2
+  preview_words_before: 3
+  preview_words_after: 3
   tokenizer_separator: /[\s/]+/
   rel_url: true
   button: false
 
-# Navegación auxiliar (links en el header)
-aux_links:
-  "GitHub":
-    - "https://github.com/marlilycelis/sena-proyecto-respira"
-  "Plataforma Respira":
-    - "https://www.calidadmedioambiental.org/dashboard"
+# Navegación
+nav_sort: case_insensitive
 
+# Enlaces auxiliares en header
+aux_links:
+  "Ver en GitHub":
+    - "//github.com/marlilycelis/sena-proyecto-respira"
+
+# Botón de GitHub
 aux_links_new_tab: true
 
-# Botón para editar en GitHub
+# Footer
+footer_content: "Copyright &copy; 2025 Proyecto Respira SENA"
+
+# Botón volver arriba
+back_to_top: true
+back_to_top_text: "Volver arriba"
+
+# Editar en GitHub
 gh_edit_link: true
 gh_edit_link_text: "Editar en GitHub"
 gh_edit_repository: "https://github.com/marlilycelis/sena-proyecto-respira"
 gh_edit_branch: "main"
-gh_edit_view_mode: "tree"
 gh_edit_source: docs
+gh_edit_view_mode: "tree"
 
-# Footer
-footer_content: "Copyright &copy; 2025 Proyecto Respira SENA - Licencia MIT"
-
-# Back to top link
-back_to_top: true
-back_to_top_text: "⬆ Volver arriba"
-
-# Footer con última actualización
-last_edit_timestamp: true
-last_edit_time_format: "%d %b %Y %H:%M"
-
-# Habilitar heading anchors
-heading_anchors: true
-
-# Configuración de Markdown
+# Markdown
 markdown: kramdown
 kramdown:
   input: GFM
+  auto_ids: true
   hard_wrap: false
   syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    block:
-      line_numbers: false
 
-# Plugins
+# Plugins (solo los compatibles con GitHub Pages)
 plugins:
   - jekyll-seo-tag
-  - jekyll-github-metadata
-  - jekyll-include-cache
 
-# Exclude de la construcción
+# Excluir archivos
 exclude:
-  - node_modules/
-  - vendor/
   - Gemfile
   - Gemfile.lock
-  - "*.gem"
-  - "*.gemspec"
-  - script/
-  - LICENSE.txt
-  - lib/
-  - bin/
-  - Rakefile
-  - Dockerfile
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
 
-# Configuración para Mermaid (diagramas)
-mermaid:
-  version: "10.6.1"
+# Incluir archivos
+include:
+  - _pages
 
-# Compress HTML
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  startings: []
-  blanklines: false
-  profile: false
+# Configuración de assets
+sass:
+  style: compressed
 
-# Collections
-collections_dir: .
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-  - scope:
-      path: "assets/images"
-    values:
-      image: true
-  - scope:
-      path: "assets"
-    values:
-      image: true
+# Timezone
+timezone: America/Bogota
