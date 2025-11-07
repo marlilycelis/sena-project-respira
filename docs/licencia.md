@@ -163,7 +163,7 @@ Si usas este proyecto, **no es obligatorio pero sería genial** si mencionas:
 
 ```markdown
 Basado en "Proyecto Respira" por SENA
-https://github.com/marlilycelis/sena-proyecto-respira
+https://github.com/marlilycelis/sena-project-respira
 ```
 
 O en código:
@@ -171,7 +171,7 @@ O en código:
 ```cpp
 /*
  * Basado en Proyecto Respira - SENA
- * https://github.com/marlilycelis/sena-proyecto-respira
+ * https://github.com/marlilycelis/sena-project-respira
  * Licencia: MIT
  */
 ```

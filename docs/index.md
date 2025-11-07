@@ -12,7 +12,7 @@ permalink: /
 Monitoreo Ambiental IoT
 {: .fs-6 .fw-300 }
 
-[Ver en GitHub](https://github.com/marlilycelis/sena-proyecto-respira){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Ver en GitHub](https://github.com/marlilycelis/sena-project-respira){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [Dashboard Respira](https://www.calidadmedioambiental.org/dashboard){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---

@@ -85,7 +85,7 @@ Si deseas mejorar el proyecto:
 4. Sube los cambios (`git push origin feature/nueva-funcionalidad`)
 5. Abre un Pull Request
 
-[📂 Repositorio en GitHub](https://github.com/marlilycelis/sena-proyecto-respira){: .btn .btn-green }
+[📂 Repositorio en GitHub](https://github.com/marlilycelis/sena-project-respira){: .btn .btn-green }
 
 ---
 
@@ -93,7 +93,7 @@ Si deseas mejorar el proyecto:
 
 Para consultas sobre el proyecto:
 
-- 📧 **Repositorio:** [github.com/marlilycelis/sena-proyecto-respira](https://github.com/marlilycelis/sena-proyecto-respira)
+- 📧 **Repositorio:** [github.com/marlilycelis/sena-project-respira](https://github.com/marlilycelis/sena-project-respira)
 - 🌐 **SENA Regional Nariño:** [www.sena.edu.co](https://www.sena.edu.co)
 
 ---

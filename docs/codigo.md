@@ -49,7 +49,7 @@ Este código permite obtener los valores mínimos y máximos de cada sensor para
 
 ### Código fuente
 
-[📄 Ver código completo: `calibracion.ino`](https://github.com/marlilycelis/sena-proyecto-respira/blob/main/src/calibracion.ino){: .btn .btn-blue }
+[📄 Ver código completo: `calibracion.ino`](https://github.com/marlilycelis/sena-project-respira/blob/main/src/calibracion.ino){: .btn .btn-blue }
 
 ### Ejemplo de uso
 
@@ -121,7 +121,7 @@ Programa final que:
 
 ### Código fuente
 
-[📄 Ver código completo: `respira_codigo.ino`](https://github.com/marlilycelis/sena-proyecto-respira/blob/main/src/respira_codigo.ino){: .btn .btn-green }
+[📄 Ver código completo: `respira_codigo.ino`](https://github.com/marlilycelis/sena-project-respira/blob/main/src/respira_codigo.ino){: .btn .btn-green }
 
 ### Configuración WiFi
 
@@ -238,7 +238,7 @@ humedad = constrain(humedad, 0, 100);
 {: .highlight }
 1. **Clona el repositorio:**
    ```bash
-   git clone https://github.com/marlilycelis/sena-proyecto-respira.git
+   git clone https://github.com/marlilycelis/sena-project-respira.git
    ```
 
 2. **Abre `calibracion.ino`** en Arduino IDE
