@@ -9,7 +9,7 @@ url: "https://marlilycelis.github.io"
 # ==============================
 # Tema (compatible con GitHub Pages)
 # ==============================
-theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
 
 # ==============================
 # Navegación y búsqueda
